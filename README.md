@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# 🥗 Recipe-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that allows users to search for healthy recipes using the Edamam Recipe Search API.
 
-## Available Scripts
+# DEMO:
 
-In the project directory, you can run:
+Please open the app here: https://recipe-for-your-health.netlify.app/
 
-### `npm start`
+## 📸 Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![REcipe App Screenshot](screenshot.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- 🔍 Search for recipes by keyword
+- 🍽 View detailed recipe info: ingredients, calories, meal type, diet labels
+- 📱 Mobile responsive layout
+- 🎨 Background image and modern UI styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Technologies Used
 
-### `npm run build`
+- React
+- CSS (with responsive design)
+- Edamam API (free tier)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/meal-plan.git
+cd meal-plan
 
-### `npm run eject`
+2. Install Dependencies
+bash
+Kopieren
+Bearbeiten
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the Application
+bash
+Kopieren
+Bearbeiten
+npm start
+The app will run on http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔑 API Credentials
+This app uses the Edamam API. You need to get your own App ID and App Key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Go to Edamam Developer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Sign up and create a new application
 
-## Learn More
+Replace the app_id and app_key in the code (in App.js) with your own credentials:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+js
+Kopieren
+Bearbeiten
+const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=YOUR_APP_ID&app_key=YOUR_APP_KEY`);
+⚠️ Do not commit real API keys to public repositories.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+📌 License This project is open-source and available under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project was created as part of a learning exercise and is intended for educational use only.
 
-### Analyzing the Bundle Size
+Feel free to ask questions or suggest improvements!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
