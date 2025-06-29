@@ -8,7 +8,7 @@ Please open the app here: https://recipe-for-your-health.netlify.app/
 
 ## 📸 Preview
 
-![Recipe App Screenshot](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## 🚀 Features
 
